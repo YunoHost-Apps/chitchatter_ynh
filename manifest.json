@@ -3,7 +3,7 @@
     "id": "chitchatter",
     "packaging_format": 1,
     "description": {
-        "en": "Peer-to-peer chat app that is serverless, decentralized, and ephemeral ",
+        "en": "Peer-to-peer chat app that is serverless, decentralized, and ephemeral",
         "fr": "Application de chat peer-to-peer sans serveur, décentralisée et éphémère"
     },
     "version": "1.0~ynh1",
