@@ -17,7 +17,6 @@ ynh_script_progression --message="Loading installation settings..." --weight=1
 app=$YNH_APP_INSTANCE_NAME
 
 domain=$(ynh_app_setting_get --app=$app --key=domain)
-port=$(ynh_app_setting_get --app=$app --key=port)
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
 
 #=================================================
@@ -41,7 +40,6 @@ ynh_remove_nginx_config
 #=================================================
 ynh_script_progression --message="Removing dependencies..." --weight=1
 
-# Remove metapackage and its dependencies
 #ynh_remove_app_dependencies
 ynh_remove_nodejs
 
