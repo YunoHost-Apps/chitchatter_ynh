@@ -1,0 +1,43 @@
+{
+    "name": "Chitchatter",
+    "id": "chitchatter",
+    "packaging_format": 1,
+    "description": {
+        "en": "Peer-to-peer chat app that is serverless, decentralized, and ephemeral ",
+        "fr": "Application de chat peer-to-peer sans serveur, décentralisée et éphémère"
+    },
+    "version": "1.0~ynh1",
+    "url": "https://chitchatter.im/",
+    "upstream": {
+        "license": "GPL-2.0",
+        "website": "https://chitchatter.im/",
+        "demo": "https://chitchatter.im/",
+        "admindoc": "https://yunohost.org/packaging_apps",
+        "code": "https://github.com/jeremyckahn/chitchatter"
+    },
+    "license": "GPL-2.0",
+    "maintainer": {
+        "name": "eric_G",
+        "email": ""
+    },
+    "requirements": {
+        "yunohost": ">= 11.0.9"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx"
+    ],
+    "arguments": {
+        "install": [
+            {
+                "name": "domain",
+                "type": "domain"
+            },
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "default": true
+            }
+        ]
+    }
+}
