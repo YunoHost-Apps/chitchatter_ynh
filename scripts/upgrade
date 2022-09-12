@@ -54,11 +54,10 @@ ynh_system_user_create --username=$app --home_dir="$final_path"
 
 if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
-	ynh_script_progression --message="Upgrading source files..." --weight=5
+	ynh_script_progression --message="Upgrading source files..." --weight=4
 
 	pushd $final_path
 		git fetch
-    	#git checkout master
     	git reset --hard --quiet $version_commit
 		git pull
 	popd
@@ -87,7 +86,7 @@ ynh_add_nginx_config
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring the app..." --weight=2
+ynh_script_progression --message="Configuring the app..." --weight=10
 
 pushd $final_path
 	ynh_use_nodejs
