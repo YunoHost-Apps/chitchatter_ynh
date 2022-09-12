@@ -33,7 +33,6 @@ Chitchatter is a free (as in both price and freedom) communication tool. It is d
 
 ## Captures d'écran
 
-![Capture d'écran de Chitchatter](./doc/screenshots/.DS_Store)
 ![Capture d'écran de Chitchatter](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
