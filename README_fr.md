@@ -38,7 +38,6 @@ Chitchatter is a free (as in both price and freedom) communication tool. It is d
 ## Documentations et ressources
 
 * Site officiel de l'app : <https://chitchatter.im/>
-* Documentation officielle de l'admin : <https://yunohost.org/packaging_apps>
 * Dépôt de code officiel de l'app : <https://github.com/jeremyckahn/chitchatter>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_chitchatter>
 * Signaler un bug : <https://github.com/YunoHost-Apps/chitchatter_ynh/issues>
