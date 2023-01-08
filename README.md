@@ -28,7 +28,6 @@ Chitchatter is a free (as in both price and freedom) communication tool. It is d
 
 **Shipped version:** 1.0~ynh1
 
-
 **Demo:** https://chitchatter.im/
 
 ## Screenshots
