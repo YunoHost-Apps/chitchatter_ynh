@@ -6,7 +6,7 @@
 # PHP APP SPECIFIC
 #=================================================
 
-version_commit=e2bac732cf1288f7b5d0bec151098f18e8b1d0d6
+version_commit=d5aa4d7f0b855319f2e7d203a8ecdd3a3c7d8bc1
 
 # nodejs version
 nodejs_version=16
