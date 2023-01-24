@@ -103,9 +103,9 @@ pushd $final_path
 	#ynh_exec_warn_less npm install -g npm@latest serve
 	#ynh_exec_warn_less npm install
 	#ynh_exec_warn_less npm run build
-	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH $ynh_npm install -g npm@latest serve
-	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH $ynh_npm install
-	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH $ynh_npm build
+	ynh_exec_warn_less $ynh_npm install -g npm@latest serve
+	ynh_exec_warn_less $ynh_npm install
+	ynh_exec_warn_less $ynh_npm build
 popd
 
 #=================================================
