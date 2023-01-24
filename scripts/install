@@ -105,7 +105,7 @@ pushd $final_path
 	#ynh_exec_warn_less npm run build
 	ynh_exec_warn_less $ynh_npm install -g npm@latest serve
 	ynh_exec_warn_less $ynh_npm install
-	ynh_exec_warn_less $ynh_npm build
+	ynh_exec_warn_less $ynh_npm run build
 popd
 
 #=================================================
