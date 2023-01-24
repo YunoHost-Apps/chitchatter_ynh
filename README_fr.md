@@ -5,15 +5,15 @@ It shall NOT be edited by hand.
 
 # Chitchatter pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/chitchatter.svg)](https://dash.yunohost.org/appci/app/chitchatter) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/chitchatter.svg)](https://dash.yunohost.org/appci/app/chitchatter) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)
 [![Installer Chitchatter avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chitchatter)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Chitchatter rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Chitchatter rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 Chitchatter is a free (as in both price and freedom) communication tool. It is designed with security and privacy in mind.
 
@@ -26,18 +26,18 @@ Chitchatter is a free (as in both price and freedom) communication tool. It is d
 - Ephemeral
 - Decentralized 
 
-**Version incluse :** 1.0~ynh2
+**Version incluse :** 1.0~ynh3
 
 **Démo :** https://chitchatter.im/
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de Chitchatter](./doc/screenshots/screenshot.png)
+![Capture d’écran de Chitchatter](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://chitchatter.im/>
-* Dépôt de code officiel de l'app : <https://github.com/jeremyckahn/chitchatter>
+* Site officiel de l’app : <https://chitchatter.im/>
+* Dépôt de code officiel de l’app : <https://github.com/jeremyckahn/chitchatter>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_chitchatter>
 * Signaler un bug : <https://github.com/YunoHost-Apps/chitchatter_ynh/issues>
 
@@ -53,4 +53,4 @@ ou
 sudo yunohost app upgrade chitchatter -u https://github.com/YunoHost-Apps/chitchatter_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
