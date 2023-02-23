@@ -1,0 +1,43 @@
+packaging_format = 2
+
+id = "chitchatter"
+name = "Chitchatter"
+description.en = "Peer-to-peer chat that is serverless, decentralized, and ephemeral"
+description.fr = "Chat peer-to-peer sans serveur, décentralisée et éphémère"
+
+version = "1.0~ynh3"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "GPL-2.0"
+website = "https://chitchatter.im/"
+demo = "https://chitchatter.im/"
+code = "https://github.com/jeremyckahn/chitchatter"
+
+[integration]
+yunohost = ">= 11.1.10"
+architectures = "all"
+multi_instance = true
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+    full_domain = true
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"

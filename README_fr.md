@@ -6,6 +6,7 @@ It shall NOT be edited by hand.
 # Chitchatter pour YunoHost
 
 [![Niveau d’intégration](https://dash.yunohost.org/integration/chitchatter.svg)](https://dash.yunohost.org/appci/app/chitchatter) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)
+
 [![Installer Chitchatter avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chitchatter)
 
 *[Read this readme in english.](./README.md)*
