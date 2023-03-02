@@ -16,7 +16,7 @@ demo = "https://chitchatter.im/"
 code = "https://github.com/jeremyckahn/chitchatter"
 
 [integration]
-yunohost = ">= 11.1.11"
+yunohost = ">= 11.1.12"
 architectures = "all"
 multi_instance = true
 ldap = false
