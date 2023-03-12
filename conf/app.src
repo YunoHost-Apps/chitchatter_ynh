@@ -1,7 +1,0 @@
-SOURCE_URL=https://github.com/jeremyckahn/chitchatter/archive/99a9ab783815e3bddeebd0de8ad74d010e5162b1.tar.gz
-SOURCE_SUM=35d5521e0e96f9271f2437bae29af1f7edfe293d80be4353fbefdcccdbfe8258
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=chitchatter
-SOURCE_EXTRACT=true

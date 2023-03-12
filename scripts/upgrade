@@ -21,13 +21,18 @@ upgrade_type=$(ynh_check_app_version_changed)
 
 if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
-	ynh_script_progression --message="Upgrading source files..." --weight=1
+	ynh_script_progression --message="Upgrading source files..." --weight=5
 
-	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir"
+	pushd $install_dir
+		chown -R $app:www-data "$install_dir"
+		git config --system --add safe.directory $install_dir
+		
+		ynh_exec_as $app git fetch
+    	ynh_exec_as $app git reset --hard --quiet $version_commit
+		ynh_exec_as $app git pull
+	popd
 fi
 
-chmod 750 "$install_dir"
 chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
 
