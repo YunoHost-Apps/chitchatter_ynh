@@ -16,7 +16,7 @@ demo = "https://chitchatter.im/"
 code = "https://github.com/jeremyckahn/chitchatter"
 
 [integration]
-yunohost = ">= 11.1.13"
+yunohost = ">= 11.1.15"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -35,6 +35,14 @@ ram.runtime = "50M"
     default = "visitors"
 
 [resources]
+
+    [resources.sources]
+
+        [resources.sources.main]
+        url = "https://github.com/jeremyckahn/chitchatter/archive/99a9ab783815e3bddeebd0de8ad74d010e5162b1.tar.gz"
+        sha256 = "35d5521e0e96f9271f2437bae29af1f7edfe293d80be4353fbefdcccdbfe8258"
+        rename = "chitchatter"
+
     [resources.system_user]
 
     [resources.install_dir]
