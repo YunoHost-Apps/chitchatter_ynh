@@ -36,13 +36,6 @@ ram.runtime = "50M"
 
 [resources]
 
-    [resources.sources]
-
-        [resources.sources.main]
-        url = "https://github.com/jeremyckahn/chitchatter/archive/442f5406ec26d001798c1a2b5a5d9a05fdc77459.tar.gz"
-        sha256 = "02a53c37701784a6e4182e574916ef69afdf88efb1ec53e72f26be23eee31b74"
-        rename = "chitchatter"
-
     [resources.system_user]
 
     [resources.install_dir]
