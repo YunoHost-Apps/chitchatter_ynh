@@ -5,7 +5,7 @@ name = "Chitchatter"
 description.en = "Peer-to-peer chat that is serverless, decentralized, and ephemeral"
 description.fr = "Chat peer-to-peer sans serveur, décentralisée et éphémère"
 
-version = "1.0~ynh4"
+version = "1.0~ynh5"
 
 maintainers = ["eric_G"]
 
@@ -39,8 +39,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/jeremyckahn/chitchatter/archive/99a9ab783815e3bddeebd0de8ad74d010e5162b1.tar.gz"
-        sha256 = "35d5521e0e96f9271f2437bae29af1f7edfe293d80be4353fbefdcccdbfe8258"
+        url = "https://github.com/jeremyckahn/chitchatter/archive/442f5406ec26d001798c1a2b5a5d9a05fdc77459.tar.gz"
+        sha256 = "02a53c37701784a6e4182e574916ef69afdf88efb1ec53e72f26be23eee31b74"
         rename = "chitchatter"
 
     [resources.system_user]
