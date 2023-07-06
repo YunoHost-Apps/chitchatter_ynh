@@ -16,16 +16,16 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Chitchatter is a free (as in both price and freedom) communication tool. It is designed with security and privacy in mind.
+Chitchatter est un outil de communication gratuit (comme dans le prix et la liberté). Il est conçu dans un souci de sécurité et de confidentialité.
 
-### Features
+### Caractéristiques
 
-- Fully open source (licensed under GPL v2)
-- Peer-to-peer
-- Encrypted (via WebRTC)
-- Serverless
-- Ephemeral
-- Decentralized 
+- Entièrement open source (sous licence GPL v2)
+- D'égal à égal
+- Chiffré (via WebRTC)
+- Sans serveur
+- Éphémère
+- Décentralisé
 
 **Version incluse :** 1.0~ynh7
 
