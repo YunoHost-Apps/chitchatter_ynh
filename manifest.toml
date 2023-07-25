@@ -5,7 +5,7 @@ name = "Chitchatter"
 description.en = "Peer-to-peer chat that is serverless, decentralized, and ephemeral"
 description.fr = "Chat peer-to-peer sans serveur, décentralisée et éphémère"
 
-version = "1.0~ynh6"
+version = "1.0~ynh7"
 
 maintainers = ["eric_G"]
 
@@ -16,7 +16,7 @@ demo = "https://chitchatter.im/"
 code = "https://github.com/jeremyckahn/chitchatter"
 
 [integration]
-yunohost = ">= 11.1.19"
+yunohost = ">= 11.1.21"
 architectures = "all"
 multi_instance = true
 ldap = false
