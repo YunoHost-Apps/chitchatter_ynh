@@ -33,6 +33,9 @@ then
 	popd
 fi
 
+chmod -R o-rwx "$install_dir"
+chown -R $app:www-data "$install_dir"
+
 #=================================================
 # UPGRADE DEPENDENCIES
 #=================================================
