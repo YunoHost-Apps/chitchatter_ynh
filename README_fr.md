@@ -27,7 +27,7 @@ Chitchatter est un outil de communication gratuit (comme dans le prix et la libe
 - Éphémère
 - Décentralisé
 
-**Version incluse :** 1.0~ynh9
+**Version incluse :** 1.0~ynh10.1
 
 **Démo :** https://chitchatter.im/
 
@@ -39,7 +39,7 @@ Chitchatter est un outil de communication gratuit (comme dans le prix et la libe
 
 * Site officiel de l’app : <https://chitchatter.im/>
 * Dépôt de code officiel de l’app : <https://github.com/jeremyckahn/chitchatter>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_chitchatter>
+* YunoHost Store: <https://apps.yunohost.org/app/chitchatter>
 * Signaler un bug : <https://github.com/YunoHost-Apps/chitchatter_ynh/issues>
 
 ## Informations pour les développeurs
