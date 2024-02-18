@@ -33,9 +33,6 @@ then
 	popd
 fi
 
-chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
-
 #=================================================
 # UPGRADE DEPENDENCIES
 #=================================================
@@ -62,6 +59,9 @@ pushd $install_dir
 	ynh_exec_warn_less $ynh_npm install
 	ynh_exec_warn_less $ynh_npm run build
 popd
+
+chmod -R o-rwx "$install_dir"
+chown -R $app:www-data "$install_dir"
 
 #=================================================
 # END OF SCRIPT
