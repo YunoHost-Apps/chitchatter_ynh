@@ -5,9 +5,9 @@ name = "Chitchatter"
 description.en = "Peer-to-peer chat that is serverless, decentralized, and ephemeral"
 description.fr = "Chat peer-to-peer sans serveur, décentralisée et éphémère"
 
-version = "1.0~ynh10.1"
+version = "1.0~ynh11"
 
-maintainers = ["eric_G"]
+maintainers = []
 
 [upstream]
 license = "GPL-2.0"
