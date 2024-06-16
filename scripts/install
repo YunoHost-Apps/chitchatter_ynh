@@ -21,17 +21,15 @@ ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=4
 
-mkdir -p "$install_dir"
-chown -R $app:www-data "$install_dir"
+#=================================================
+# DOWNLOAD, CHECK AND UNPACK SOURCE
+#=================================================
+ynh_script_progression --message="Setting up source files..." --weight=1
 
-git config --system --add safe.directory $install_dir
+# Download, check integrity, uncompress and patch the source from manifest.toml
+ynh_setup_source --dest_dir="$install_dir"
 
-# Download, check integrity, uncompress and patch the source from GitHub
-git clone https://github.com/jeremyckahn/chitchatter "$install_dir" --quiet
-
-pushd "$install_dir"
-	git reset --hard --quiet $version_commit
-popd
+chown -R "$app:www-data" "$install_dir"
 
 #=================================================
 # NGINX CONFIGURATION
