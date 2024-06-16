@@ -17,11 +17,6 @@ ynh_script_progression --message="Removing NGINX web server configuration..." --
 # Remove the dedicated NGINX config
 ynh_remove_nginx_config
 
-#=================================================
-# REMOVE DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Removing dependencies..." --weight=1
-
 ynh_remove_nodejs
 
 #=================================================

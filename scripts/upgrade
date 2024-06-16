@@ -10,28 +10,18 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# CHECK VERSION
-#=================================================
-
-upgrade_type=$(ynh_check_app_version_changed)
-
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
+ynh_script_progression --message="Upgrading source files..." --weight=5
 
-if [ "$upgrade_type" == "UPGRADE_APP" ]
-then
-	ynh_script_progression --message="Upgrading source files..." --weight=5
-
-	pushd $install_dir
-		chown -R $app:www-data "$install_dir"
-		git config --system --add safe.directory $install_dir
+pushd $install_dir
+	chown -R $app:www-data "$install_dir"
+	git config --system --add safe.directory $install_dir
 		
-		ynh_exec_as $app git fetch
-    	ynh_exec_as $app git reset --hard --quiet $version_commit
-		ynh_exec_as $app git pull
-	popd
-fi
+	ynh_exec_as $app git fetch
+    ynh_exec_as $app git reset --hard --quiet $version_commit
+	ynh_exec_as $app git pull
+popd
 
 chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
