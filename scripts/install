@@ -39,11 +39,10 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Configuring the app..." --weight=10
 
-pushd $install_dir
-	ynh_use_nodejs
-	ynh_exec_warn_less $ynh_npm install -g npm@latest serve
-	ynh_exec_warn_less $ynh_npm install
-	ynh_exec_warn_less $ynh_npm run build
+pushd "$install_dir"
+ 	ynh_use_nodejs
+ 	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH $ynh_npm install
+	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH $ynh_npm run build
 popd
 
 chmod -R o-rwx "$install_dir"
