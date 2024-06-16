@@ -10,25 +10,21 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# DOWNLOAD, CHECK AND UNPACK SOURCE
-#=================================================
-ynh_script_progression --message="Upgrading source files..." --weight=5
-
-pushd $install_dir
-	chown -R $app:www-data "$install_dir"
-	git config --system --add safe.directory $install_dir
-		
-	ynh_exec_as $app git fetch
-    ynh_exec_as $app git reset --hard --quiet $version_commit
-	ynh_exec_as $app git pull
-popd
-
-#=================================================
 # UPGRADE DEPENDENCIES
 #=================================================
 ynh_script_progression --message="Upgrading dependencies..." --weight=1
 
 ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
+
+#=================================================
+# DOWNLOAD, CHECK AND UNPACK SOURCE
+#=================================================
+ynh_script_progression --message="Upgrading source files..." --weight=1
+
+# Download, check integrity, uncompress and patch the source from manifest.toml
+ynh_setup_source --dest_dir="$install_dir"
+
+chown -R "$app:www-data" "$install_dir"
 
 #=================================================
 # NGINX CONFIGURATION

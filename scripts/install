@@ -19,19 +19,12 @@ ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=4
+ynh_script_progression --message="Setting up source files..." --weight=1
 
-mkdir -p "$install_dir"
-chown -R $app:www-data "$install_dir"
+# Download, check integrity, uncompress and patch the source from manifest.toml
+ynh_setup_source --dest_dir="$install_dir"
 
-git config --system --add safe.directory $install_dir
-
-# Download, check integrity, uncompress and patch the source from GitHub
-git clone https://github.com/jeremyckahn/chitchatter "$install_dir" --quiet
-
-pushd "$install_dir"
-	git reset --hard --quiet $version_commit
-popd
+chown -R "$app:www-data" "$install_dir"
 
 #=================================================
 # NGINX CONFIGURATION
@@ -46,11 +39,10 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Configuring the app..." --weight=10
 
-pushd $install_dir
-	ynh_use_nodejs
-	ynh_exec_warn_less $ynh_npm install -g npm@latest serve
-	ynh_exec_warn_less $ynh_npm install
-	ynh_exec_warn_less $ynh_npm run build
+pushd "$install_dir"
+ 	ynh_use_nodejs
+ 	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH $ynh_npm install
+	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH $ynh_npm run build
 popd
 
 chmod -R o-rwx "$install_dir"
