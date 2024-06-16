@@ -27,7 +27,7 @@ Chitchatter is a free (as in both price and freedom) communication tool. It is d
 - Ephemeral
 - Decentralized 
 
-**分发版本：** 1.0~ynh10
+**分发版本：** 1.0~ynh11
 
 **演示：** <https://chitchatter.im/>
 

@@ -27,7 +27,7 @@ Chitchatter est un outil de communication gratuit (comme dans le prix et la libe
 - Éphémère
 - Décentralisé
 
-**Version incluse :** 1.0~ynh10
+**Version incluse :** 1.0~ynh11
 
 **Démo :** <https://chitchatter.im/>
 
