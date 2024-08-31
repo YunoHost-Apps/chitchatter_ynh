@@ -16,10 +16,9 @@ ynh_nodejs_install
 ynh_script_progression "Setting up source files..."
 
 mkdir -p "$install_dir"
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R $app:www-data "$install_dir"
+
 git config --system --add safe.directory $install_dir
 
-# Download, check integrity, uncompress and patch the source from GitHub
 git clone https://github.com/jeremyckahn/chitchatter "$install_dir" --quiet
 
 pushd "$install_dir"
@@ -31,7 +30,6 @@ popd
 #=================================================
 ynh_script_progression "Configuring NGINX web server..."
 
-# Create a dedicated NGINX config
 ynh_config_add_nginx
 
 #=================================================
@@ -40,14 +38,11 @@ ynh_config_add_nginx
 ynh_script_progression "Configuring the app..."
 
 pushd $install_dir
-
 	ynh_hide_warnings npm install -g npm@latest serve
 	ynh_hide_warnings npm install
 	ynh_hide_warnings npm run build
 popd
 
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod -R o-rwx "$install_dir"
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R $app:www-data "$install_dir"
 #=================================================
 # END OF SCRIPT
 #=================================================

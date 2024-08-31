@@ -3,9 +3,6 @@
 #=================================================
 # COMMON VARIABLES AND CUSTOM HELPERS
 #=================================================
-# PHP APP SPECIFIC
-#=================================================
 
-# nodejs version
 nodejs_version=20
-version_commit=fcf9fcea52d1e09d689ed6998d729aa8d08be604
+version_commit=66ffd169485caf7fdf2792b025d53964ba474968
