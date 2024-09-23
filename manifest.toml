@@ -39,6 +39,14 @@ ram.runtime = "50M"
 
 [resources]
 
+    [resources.sources]
+
+    [resources.sources.main]
+    url = "https://github.com/jeremyckahn/chitchatter/archive/b647d72c85db82435a0892bcf8f5d0abbe6b7081.tar.gz"
+    sha256 = "aa0e8b5794d292807fdd3dfb09433cb0059adfb7646d9f1bca13abbf2d92ead9"
+    autoupdate.upstream = "https://github.com/jeremyckahn/chitchatter"
+    autoupdate.strategy = "latest_github_commit"
+
     [resources.system_user]
 
     [resources.install_dir]

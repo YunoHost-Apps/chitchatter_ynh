@@ -15,15 +15,9 @@ ynh_nodejs_install
 #=================================================
 ynh_script_progression "Setting up source files..."
 
-mkdir -p "$install_dir"
+ynh_setup_source --dest_dir="$install_dir"
 
-git config --system --add safe.directory $install_dir
-
-git clone https://github.com/jeremyckahn/chitchatter "$install_dir" --quiet
-
-pushd "$install_dir"
-	git reset --hard --quiet $version_commit
-popd
+chown -R "$app:www-data" "$install_dir"
 
 #=================================================
 # NGINX CONFIGURATION
