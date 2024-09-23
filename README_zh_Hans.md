@@ -5,7 +5,7 @@
 
 # YunoHost 上的 Chitchatter
 
-[![集成程度](https://dash.yunohost.org/integration/chitchatter.svg)](https://dash.yunohost.org/appci/app/chitchatter) ![工作状态](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/chitchatter.svg)](https://ci-apps.yunohost.org/ci/apps/chitchatter/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)
 
 [![使用 YunoHost 安装 Chitchatter](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chitchatter)
 
