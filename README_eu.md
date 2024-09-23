@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Chitchatter YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/chitchatter.svg)](https://dash.yunohost.org/appci/app/chitchatter) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/chitchatter.svg)](https://ci-apps.yunohost.org/ci/apps/chitchatter/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)
 
 [![Instalatu Chitchatter YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chitchatter)
 

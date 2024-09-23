@@ -5,7 +5,7 @@ No se debe editar a mano.
 
 # Chitchatter para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/chitchatter.svg)](https://dash.yunohost.org/appci/app/chitchatter) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/chitchatter.svg)](https://ci-apps.yunohost.org/ci/apps/chitchatter/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)
 
 [![Instalar Chitchatter con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chitchatter)
 
@@ -44,7 +44,7 @@ Chitchatter is a free (as in both price and freedom) communication tool. It is d
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/chitchatter_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/chitchatter_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 

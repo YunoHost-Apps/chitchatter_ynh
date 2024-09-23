@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Chitchatter pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/chitchatter.svg)](https://dash.yunohost.org/appci/app/chitchatter) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/chitchatter.svg)](https://ci-apps.yunohost.org/ci/apps/chitchatter/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/chitchatter.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/chitchatter.maintain.svg)
 
 [![Installer Chitchatter avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chitchatter)
 
