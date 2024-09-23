@@ -27,7 +27,6 @@ ynh_nodejs_install
 #=================================================
 ynh_script_progression "Upgrading NGINX web server configuration..."
 
-# Create a dedicated NGINX config
 ynh_config_add_nginx
 
 #=================================================
