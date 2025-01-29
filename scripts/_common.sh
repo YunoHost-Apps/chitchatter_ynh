@@ -8,7 +8,7 @@
 
 # nodejs version
 nodejs_version=20
-version_commit=fcf9fcea52d1e09d689ed6998d729aa8d08be604
+version_commit=0bf0bf327bbcffe577fb5ec6f4e3d98d1ab711f8
 
 #=================================================
 # PERSONAL HELPERS
