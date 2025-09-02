@@ -28,7 +28,7 @@ popd
 #=================================================
 ynh_script_progression --message="Upgrading dependencies..." --weight=1
 
-ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
+#REMOVEME? ynh_exec_warn_less #REMOVEME? ynh_install_nodejs --#REMOVEME? nodejs_version=$nodejs_version
 
 #=================================================
 # NGINX CONFIGURATION
@@ -44,7 +44,7 @@ ynh_add_nginx_config
 ynh_script_progression --message="Configuring the app..." --weight=10
 
 pushd $install_dir
-	ynh_use_nodejs
+	#REMOVEME? ynh_use_nodejs
 	ynh_exec_warn_less $ynh_npm install -g npm@latest serve
 	ynh_exec_warn_less $ynh_npm install
 	ynh_exec_warn_less $ynh_npm run build
