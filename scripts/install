@@ -23,9 +23,9 @@ ynh_config_add_nginx
 ynh_script_progression "Configuring the app..."
 
 pushd $install_dir
-	ynh_hide_warnings ynh_exec_as_app npm install -g npm@latest serve
-	ynh_hide_warnings ynh_exec_as_app npm install
-	ynh_hide_warnings ynh_exec_as_app npm run build
+	ynh_hide_warnings npm install -g npm@latest serve
+	ynh_hide_warnings npm install
+	ynh_hide_warnings npm run build
 popd
 
 #=================================================
