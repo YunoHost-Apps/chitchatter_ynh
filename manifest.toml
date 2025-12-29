@@ -5,7 +5,7 @@ name = "Chitchatter"
 description.en = "Peer-to-peer chat that is serverless, decentralized, and ephemeral"
 description.fr = "Chat peer-to-peer sans serveur, décentralisée et éphémère"
 
-version = "1.0~ynh11"
+version = "2025.12.29~ynh1"
 
 maintainers = []
 
@@ -16,17 +16,17 @@ demo = "https://chitchatter.im/"
 code = "https://github.com/jeremyckahn/chitchatter"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 12.1.17"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
 ldap = false
-
 sso = false
 
-disk = "50M"
+disk = "1500M"
 ram.build = "2800M"
-ram.runtime = "50M"
+ram.runtime = "250M"
 
 [install]
     [install.domain]
@@ -38,9 +38,20 @@ ram.runtime = "50M"
 
 [resources]
 
+    # for update notification only.
+    [resources.sources.main]
+    url = "https://github.com/jeremyckahn/chitchatter/archive/11542db41f0e1fbf1dfea13ec07b010fc1cfae00.tar.gz"
+    sha256 = "4b2a82dcc595b88602f045f6dbf8ce876cc18c0ea839a8a1bfd61e5dde983f47"
+    autoupdate.upstream = "https://github.com/jeremyckahn/chitchatter"
+    autoupdate.strategy = "latest_github_commit"
+
     [resources.system_user]
 
     [resources.install_dir]
+    group = "www-data:r-x"
 
     [resources.permissions]
     main.url = "/"
+    
+    [resources.nodejs]
+    version = "22"

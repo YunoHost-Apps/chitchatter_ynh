@@ -1,25 +1,12 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# INSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Installing dependencies..." --weight=1
-
-ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
-
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=4
+ynh_script_progression "Setting up source files..."
 
 mkdir -p "$install_dir"
 chown -R $app:www-data "$install_dir"
@@ -36,28 +23,23 @@ popd
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring NGINX web server..." --weight=1
+ynh_script_progression "Configuring NGINX web server..."
 
-# Create a dedicated NGINX config
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring the app..." --weight=10
+ynh_script_progression "Configuring the app..."
 
 pushd $install_dir
-	ynh_use_nodejs
-	ynh_exec_warn_less $ynh_npm install -g npm@latest serve
-	ynh_exec_warn_less $ynh_npm install
-	ynh_exec_warn_less $ynh_npm run build
+	ynh_hide_warnings npm install -g npm@latest serve
+	ynh_hide_warnings npm install
+	ynh_hide_warnings npm run build
 popd
-
-chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"
