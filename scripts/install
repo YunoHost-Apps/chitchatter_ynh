@@ -6,7 +6,6 @@ source /usr/share/yunohost/helpers
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
- `ynh_setup_source` use the file manifest.toml
 
 # Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
