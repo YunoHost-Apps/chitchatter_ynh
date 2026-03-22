@@ -16,7 +16,7 @@ demo = "https://chitchatter.im/"
 code = "https://github.com/jeremyckahn/chitchatter"
 
 [integration]
-yunohost = ">= 12.1.17"
+yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
