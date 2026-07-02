@@ -5,7 +5,7 @@ name = "Chitchatter"
 description.en = "Peer-to-peer chat that is serverless, decentralized, and ephemeral"
 description.fr = "Chat peer-to-peer sans serveur, décentralisée et éphémère"
 
-version = "2026.06.11~ynh1"
+version = "2026.06.18~ynh1"
 
 maintainers = []
 
@@ -40,8 +40,8 @@ ram.runtime = "250M"
 
     # for update notification only.
     [resources.sources.main]
-    url = "https://github.com/jeremyckahn/chitchatter/archive/53e3093ca7dd8638d713dfd6fcd0c9f197022a35.tar.gz"
-    sha256 = "02fbd03840a518f1b4c504dfe9ea395a078209f619b14dbdd013d4ef9c02aa02"
+    url = "https://github.com/jeremyckahn/chitchatter/archive/f6d3f49b699d24e27246d27a17ef6289bf980735.tar.gz"
+    sha256 = "5417e32be5d82bb39f291cde5c7a7ee82a4b39a8bd5acd43076018a524fec00e"
     autoupdate.upstream = "https://github.com/jeremyckahn/chitchatter"
     autoupdate.strategy = "latest_github_commit"
 
